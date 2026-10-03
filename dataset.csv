@@ -1,0 +1,17 @@
+text,label
+"Congratulations! You have won a free prize. Click this link to claim your reward.",phishing
+"Your account will be suspended immediately. Verify your password using the link below.",phishing
+"Urgent! Your bank account requires verification. Click here now.",phishing
+"You have received a special cash reward. Submit your details to receive it.",phishing
+"Your payment failed. Click the link to update your billing information.",phishing
+"Dear customer, verify your account immediately to avoid suspension.",phishing
+"Your password is about to expire. Login now to keep your account active.",phishing
+"Congratulations, you have been selected for a gift card. Claim now.",phishing
+"Please find attached the notes from today's class.",legitimate
+"Your meeting is scheduled for tomorrow at 10 AM.",legitimate
+"Please submit your assignment before Friday.",legitimate
+"Your order has been shipped and will arrive tomorrow.",legitimate
+"Here is the project report we discussed yesterday.",legitimate
+"Your appointment is confirmed for Monday.",legitimate
+"The college has announced the examination timetable.",legitimate
+"Please review the attached document and let me know if you have any questions.",legitimate

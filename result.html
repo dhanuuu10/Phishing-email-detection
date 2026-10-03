@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Detection Result</title>
+</head>
+
+<body>
+
+    <h1>Phishing Email Detection Result</h1>
+
+    <hr>
+
+    <h2>Email Information</h2>
+
+    <p>
+        <strong>Sender:</strong>
+        {{ result["sender"] }}
+    </p>
+
+    <p>
+        <strong>Sender Domain:</strong>
+        {{ result["sender_domain"] }}
+    </p>
+
+    <p>
+        <strong>Subject:</strong>
+        {{ result["subject"] }}
+    </p>
+
+    <hr>
+
+    <h2>Risk Analysis</h2>
+
+    <p>
+        <strong>Risk Score:</strong>
+        {{ result["risk_score"] }}/100
+    </p>
+
+    <p>
+        <strong>Classification:</strong>
+        {{ result["classification"] }}
+    </p>
+
+    <hr>
+
+    <h2>Detected Indicators</h2>
+
+    {% if result["indicators"] %}
+
+        <ul>
+
+            {% for indicator in result["indicators"] %}
+
+                <li>{{ indicator }}</li>
+
+            {% endfor %}
+
+        </ul>
+
+    {% else %}
+
+        <p>No suspicious indicators detected.</p>
+
+    {% endif %}
+
+    <hr>
+
+    <h2>Detected URLs</h2>
+
+    {% if result["urls"] %}
+
+        <ul>
+
+            {% for url in result["urls"] %}
+
+                <li>{{ url }}</li>
+
+            {% endfor %}
+
+        </ul>
+
+    {% else %}
+
+        <p>No URLs detected.</p>
+
+    {% endif %}
+
+    <br>
+
+    <a href="/">
+        Analyze Another Email
+    </a>
+
+</body>
+</html>
